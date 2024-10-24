@@ -110,8 +110,9 @@ class auto_driving:
                 commands = deque(input("Please enter the commands for car {}:".format(car_name)))
                 input_lists.append([car_name, int(x), int(y), direct, commands, 0])
 
-                print("""Your current list of cars are:{}
-                """.format([inputs  for inputs in input_lists ]))
+                print("Your current list of cars are:")
+                for inputs in input_lists :
+                    print(inputs)
 
         
             elif option == 2:
@@ -123,7 +124,7 @@ class auto_driving:
                     
                 for finished_car in end_pos:
                     car, x, y, direct, step = finished_car
-                    print("{}, ({},{}) {}".format(car, x, y, direct))
+                    print("- {}, ({},{}) {} at step {}".format(car, x, y, direct, step))
                 
                 option2 = int(input( """
                 Please choose from the following options:
