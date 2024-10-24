@@ -10,4 +10,4 @@ list of cars in a field of 10*10:
 result:
  - A, collides with B at (5,4) at step 7
  - B, collides with A at (5,4) at step 7
- - C, (5,7 ) N2
+ - C, (5,7 ) N at step 10
